@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ APP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+    
+<body>
+    <div id="quiz-container">
+        <div id="question-number"></div>
+        <div id="question-container" class="question"></div>
+        <div id="options-container" class="options"></div>
+        <button onclick="nextQuestion()">Next</button>
+    </div>
+
+    <div id="result-container">
+        <h2>Quiz Result</h2>
+        <p>Total Marks: <span id="total-marks"></span></p>
+        <p>Percentage: <span id="percentage"></span>%</p>
+    </div>
+
+    <div id="overlay"></div>
+    <div id="popup">
+        <h3>Correct Answer</h3>
+        <p id="correct-answer"></p>
+        <button onclick="closePopup()">Close</button>
+    </div>
+
+    <div id="start-again">
+        <button onclick="restartQuiz()">Start Again</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
